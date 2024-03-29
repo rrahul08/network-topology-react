@@ -1,0 +1,5 @@
+.hide-handle {
+  opacity: 0;
+  pointer-events: none;
+
+}

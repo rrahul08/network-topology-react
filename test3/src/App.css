@@ -1,0 +1,41 @@
+.graphs {
+  display: flex;
+  flex-direction: row;
+  /* align-items: flex-start; */
+}
+
+.radial-graph-container {
+  width: 500px; 
+  height: 400px;
+  margin-left: 20px;
+  margin-right: 50px;
+
+  margin-bottom: 40px;
+  /* margin-top: 20px; */
+}
+
+.radial-graph-container h2{
+  margin-bottom: 10px;
+}
+.title{
+ margin-left: 60px;
+}
+
+.radial {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.radial-entry{
+  display: flex;
+  /* margin-left: 90px; */
+
+  
+}
+
+
+.dropdown {
+  margin-left: 40px;
+  margin-bottom: 10px;
+}

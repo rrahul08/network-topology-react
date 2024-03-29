@@ -1,0 +1,113 @@
+.header {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  margin-top: -30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically center items */
+
+  border: 1px solid black;
+  border-radius: 0 0 30px 30px;
+  border-top-width: 0;
+  z-index: 9999;
+  background-color: whitesmoke;
+}
+
+.signin {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 80px;
+  font-size: 17px;
+}
+
+.logo {
+  margin-top: -10px;
+  margin-left: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 50px;
+  font-size: 12px;
+}
+
+.support {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: #edfae4;
+  padding-bottom: 70px;
+}
+
+.support-header {
+  padding-top: 20px;
+  margin-left: 50px;
+  line-height: 25px;
+  color: #055542;
+}
+.support-body {
+  margin-left: 60px;
+  color: #003f30;
+}
+
+.support-header,
+.support-body {
+  margin-top: 30px;
+}
+
+.support-image {
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.support-footer {
+  margin-left: 60px;
+  margin-top: 30px;
+  margin-bottom: -40px;
+  border: 1px solid black;
+  border-radius: 40px;
+  margin-right: 800px;
+  background-color: #003f30;
+}
+
+.services-header,
+.services-footer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.services-card {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 330px;
+  margin-top: 100px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.services-card:hover {
+  transform: scale(1.1);
+  transition: all 1s ease;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.services-cards {
+  display: flex;
+  margin-left: 90px;
+  gap: 20px;
+}

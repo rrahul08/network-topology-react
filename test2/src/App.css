@@ -1,0 +1,26 @@
+.graphs {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: flex-start; */
+}
+
+.radial-graph-container {
+  width: 400px; 
+  height: 400px;
+
+  margin-bottom: 40px;
+  /* margin-top: 20px; */
+}
+
+.radial-graph-container h2{
+  margin-bottom: 10px;
+}
+.title{
+ margin-left: 60px;
+}
+
+.graph {
+  width: 200px;
+  height: 200px;
+  display: flex;
+}
