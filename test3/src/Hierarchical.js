@@ -21,53 +21,54 @@ function Hierarchical() {
     fetchData();
   }, []);
 
-  if (!initialGraphData || !initialGraphData[0] || !initialGraphData[0].hierarchical) {
+  // console.log('Initial Graph Data:', initialGraphData[0].nodes);
+  if (!initialGraphData || !initialGraphData[0] || !initialGraphData[0]) {
     return <div>Loading...</div>;
   }
 
-  const uniqueLabels = [...new Set(initialGraphData[0].hierarchical.nodes.map(node => node.label))];
+  const uniqueLabels = [...new Set(initialGraphData[0].nodes.map(node => node.label))];
 
   const handleChangeLabel = (e) => {
     setSelectedLabel(e.target.value);
   };
 
-  const filteredNodes = initialGraphData[0].hierarchical.nodes.filter(node => {
+  const filteredNodes = initialGraphData[0].nodes.filter(node => {
     if (selectedLabel) {
       return node.label === selectedLabel;
     }
     return true; // Render all nodes if no label is selected
   });
 
-  const filteredEdges = initialGraphData[0].hierarchical.edges.filter(edge =>
+  const filteredEdges = initialGraphData[0].edges.filter(edge =>
     filteredNodes.some(node => node.id === edge.source) &&
     filteredNodes.some(node => node.id === edge.target)
   );
   const config = {
     type: 'fixed',
-    autoFit: false,
-    width: 1300,
-    height: 600,
+    autoFit: true,
+    width: 1450,
+    height: 700,
     layout: {
       type: 'dagre',
-      rankdir: 'LR',
-      align: 'UL',
-      nodesep: 10,
-      ranksep: 20,
-      controlPoints: true,
+      rankdir: 'TB',
+      // align: 'UL',
+      nodesep: 150,
+      ranksep: 170,
+      controlPoints: false,
       
     },
     fitview: 'false',
     nodeCfg: {
       type: 'image',
       img: pin,
-      size: 30,
+      size: 380,
       style: {
         fill: '#6CE8DC',
         stroke: '#6CE8DC',
       },
       labelCfg: {
         style: {
-          fontSize: 15,
+          fontSize: 195,
           fill: '#000',
         },
          // Adjust label position if needed
@@ -78,14 +79,16 @@ function Hierarchical() {
     },
     edgeCfg: {
       style: {
-        lineWidth: 1,
+        lineWidth: 11,
+        
+        stroke:'#3B444C'
       },
       endArrow: {
         d: 10,
         size: 2,
       },
     },
-    behaviors: ['drag-canvas', 'drag-node'],
+    behaviors: ['drag-canvas', 'drag-node','zoom-canvas'],
     onReady: (graph) => {
       chartRef.current = graph;
     },
