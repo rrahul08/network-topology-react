@@ -2,11 +2,14 @@ import React, { useRef, useState, useEffect } from 'react';
 import { RadialGraph } from '@ant-design/graphs';
 import axios from 'axios';
 import pin from './assets/oie_8R6P0yGgouRw.png';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 
 function Hierarchical() {
   const chartRef = useRef();
   const [selectedLabel, setSelectedLabel] = useState('');
   const [initialGraphData, setInitialGraphData] = useState([]);
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,6 +34,23 @@ function Hierarchical() {
   const handleChangeLabel = (e) => {
     setSelectedLabel(e.target.value);
   };
+  const handleDownload = () => {
+    html2canvas(document.body, {
+      width: 1500,
+      height: 700,
+      scale: 2, // Increase scale for higher resolution
+      scrollX: 0,
+      scrollY: 0
+    }).then(canvas => {
+      const imgData = canvas.toDataURL('image/png');
+      const pdf = new jsPDF('l', 'px', [1500 * 2, 700 * 2]); // Adjust PDF dimensions
+      pdf.addImage(imgData, 'PNG', 0, 0, 1500 * 2, 700 * 2); // Adjust image dimensions
+      pdf.save('graph.pdf');
+    });
+  };
+  
+  
+  
 
   const filteredNodes = initialGraphData[0].nodes.filter(node => {
     if (selectedLabel) {
@@ -46,12 +66,13 @@ function Hierarchical() {
   const config = {
     type: 'fixed',
     autoFit: true,
-    width: 1450,
+    width: 1500,
     height: 700,
     layout: {
       type: 'dagre',
       rankdir: 'TB',
       // align: 'UL',
+      center:'true',
       nodesep: 150,
       ranksep: 170,
       controlPoints: false,
@@ -91,6 +112,7 @@ function Hierarchical() {
     behaviors: ['drag-canvas', 'drag-node','zoom-canvas'],
     onReady: (graph) => {
       chartRef.current = graph;
+      graph.fitCenter();
     },
   };
 
@@ -106,11 +128,15 @@ function Hierarchical() {
               <option key={index} value={label}>{label}</option>
             ))}
           </select>
+          <button onClick={handleDownload}>Download as PDF</button>
         </div>
       )}
       <div style={{position:'absolute',top:'10',left:'10'}}>
         {initialGraphData.length > 0 && (
+          <div>
           <RadialGraph style={{position:'fixed'}} data={{ nodes: filteredNodes, edges: filteredEdges }} {...config} />
+          
+          </div>
         )}
       </div>
     </div>

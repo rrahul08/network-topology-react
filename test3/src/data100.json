@@ -2,8 +2,8 @@
   "nodes": [
     {
       "id": "1",
-      "label": "ospf",
-      "value": "1"
+      "value": "1",
+      "label": "isis"
     },
     {
       "id": "2",
@@ -13,12 +13,12 @@
     {
       "id": "3",
       "value": "3",
-      "label": "ospf"
+      "label": "bgp"
     },
     {
       "id": "4",
       "value": "4",
-      "label": "bgp"
+      "label": "ospf"
     },
     {
       "id": "5",
@@ -28,17 +28,17 @@
     {
       "id": "6",
       "value": "6",
-      "label": "ospf"
+      "label": "bgp"
     },
     {
       "id": "7",
       "value": "7",
-      "label": "bgp"
+      "label": "ospf"
     },
     {
       "id": "8",
       "value": "8",
-      "label": "S"
+      "label": "bgp"
     },
     {
       "id": "9",
@@ -48,17 +48,17 @@
     {
       "id": "10",
       "value": "10",
-      "label": "ospf"
+      "label": "bgp"
     },
     {
       "id": "11",
       "value": "11",
-      "label": "bgp"
+      "label": "ospf"
     },
     {
       "id": "12",
       "value": "12",
-      "label": "O"
+      "label": "bgp"
     },
     {
       "id": "13",
@@ -67,351 +67,438 @@
     },
     {
       "id": "14",
-      "value": "14"
+      "value": "14",
+      "label": "rip"
     },
     {
       "id": "15",
-      "value": "15"
+      "value": "15",
+      "label": "rip"
     },
     {
       "id": "16",
-      "value": "16"
+      "value": "16",
+      "label": "eigrp"
     },
     {
       "id": "17",
-      "value": "17"
+      "value": "17",
+      "label": "rip"
     },
     {
       "id": "18",
-      "value": "18"
+      "value": "18",
+      "label": "rip"
     },
     {
       "id": "19",
-      "value": "19"
+      "value": "19",
+      "label": "rip"
     },
     {
       "id": "20",
-      "value": "20"
+      "value": "20",
+      "label": "rip"
     },
     {
       "id": "21",
-      "value": "21"
+      "value": "21",
+      "label": "rip"
     },
     {
       "id": "22",
-      "value": "22"
+      "value": "22",
+      "label": "rip"
     },
     {
       "id": "23",
-      "value": "23"
+      "value": "23",
+      "label": "rip"
     },
     {
       "id": "24",
-      "value": "24"
+      "value": "24",
+      "label": "eigrp"
     },
     {
       "id": "25",
-      "value": "25"
+      "value": "25",
+      "label": "eigrp"
     },
     {
       "id": "26",
-      "value": "26"
+      "value": "26",
+      "label": "eigrp"
     },
     {
       "id": "27",
-      "value": "27"
+      "value": "27",
+      "label": "eigrp"
     },
     {
       "id": "28",
-      "value": "28"
+      "value": "28",
+      "label": "eigrp"
     },
     {
       "id": "29",
-      "value": "29"
+      "value": "29",
+      "label": "eigrp"
     },
     {
       "id": "30",
-      "value": "30"
+      "value": "30",
+      "label": "eigrp"
     },
     {
       "id": "31",
-      "value": "31"
+      "value": "31",
+      "label": "eigrp"
     },
     {
       "id": "32",
-      "value": "32"
+      "value": "32",
+      "label": "eigrp"
     },
     {
       "id": "33",
-      "value": "33"
+      "value": "33",
+      "label": "eigrp"
     },
     {
       "id": "34",
-      "value": "34"
+      "value": "34",
+      "label": "eigrp"
     },
     {
       "id": "35",
-      "value": "35"
+      "value": "35",
+      "label": "eigrp"
     },
     {
       "id": "36",
-      "value": "36"
+      "value": "36",
+      "label": "eigrp"
     },
     {
       "id": "37",
-      "value": "37"
+      "value": "37",
+      "label": "eigrp"
     },
     {
       "id": "38",
-      "value": "38"
+      "value": "38",
+      "label": "ospf"
     },
     {
       "id": "39",
-      "value": "39"
+      "value": "39",
+      "label": "ospf"
     },
     {
       "id": "40",
-      "value": "40"
+      "value": "40",
+      "label": "ospf"
     },
     {
       "id": "41",
-      "value": "41"
+      "value": "41",
+      "label": "ospf"
     },
     {
       "id": "42",
-      "value": "42"
+      "value": "42",
+      "label": "ospf"
     },
     {
       "id": "43",
-      "value": "43"
+      "value": "43",
+      "label": "ospf"
     },
     {
       "id": "44",
-      "value": "44"
+      "value": "44",
+      "label": "ospf"
     },
     {
       "id": "45",
-      "value": "45"
+      "value": "45",
+      "label": "ospf"
     },
     {
       "id": "46",
-      "value": "46"
+      "value": "46",
+      "label": "ospf"
     },
     {
       "id": "47",
-      "value": "47"
+      "value": "47",
+      "label": "ospf"
     },
     {
       "id": "48",
-      "value": "48"
+      "value": "48",
+      "label": "ospf"
     },
     {
       "id": "49",
-      "value": "49"
+      "value": "49",
+      "label": "ospf"
     },
     {
       "id": "50",
-      "value": "50"
+      "value": "50",
+      "label": "ospf"
     },
     {
       "id": "51",
-      "value": "51"
+      "value": "51",
+      "label": "ospf"
     },
     {
       "id": "52",
-      "value": "52"
+      "value": "52",
+      "label": "ospf"
     },
     {
       "id": "53",
-      "value": "53"
+      "value": "53",
+      "label": "isis"
     },
     {
       "id": "54",
-      "value": "54"
+      "value": "54",
+      "label": "isis"
     },
     {
       "id": "55",
-      "value": "55"
+      "value": "55",
+      "label": "bgp"
     },
     {
       "id": "56",
-      "value": "56"
+      "value": "56",
+      "label": "bgp"
     },
     {
       "id": "57",
-      "value": "57"
+      "value": "57",
+      "label": "bgp"
     },
     {
       "id": "58",
-      "value": "58"
+      "value": "58",
+      "label": "bgp"
     },
     {
       "id": "59",
-      "value": "59"
+      "value": "59",
+      "label": "isis"
     },
     {
       "id": "60",
-      "value": "60"
+      "value": "60",
+      "label": "isis"
     },
     {
       "id": "61",
-      "value": "61"
+      "value": "61",
+      "label": "isis"
     },
     {
       "id": "62",
-      "value": "62"
+      "value": "62",
+      "label": "isis"
     },
     {
       "id": "63",
-      "value": "63"
+      "value": "63",
+      "label": "isis"
     },
     {
       "id": "64",
-      "value": "64"
+      "value": "64",
+      "label": "ospf"
     },
     {
       "id": "65",
-      "value": "65"
+      "value": "65",
+      "label": "ospf"
     },
     {
       "id": "66",
-      "value": "66"
+      "value": "66",
+      "label": "rip"
     },
     {
       "id": "67",
-      "value": "67"
+      "value": "67",
+      "label": "rip"
     },
     {
       "id": "68",
-      "value": "68"
+      "value": "68",
+      "label": "rip"
     },
     {
       "id": "69",
-      "value": "69"
+      "value": "69",
+      "label": "rip"
     },
     {
       "id": "70",
-      "value": "70"
+      "value": "70",
+      "label": "eigrp"
     },
     {
       "id": "71",
-      "value": "71"
+      "value": "71",
+      "label": "eigrp"
     },
     {
       "id": "72",
-      "value": "72"
+      "value": "72",
+      "label": "eigrp"
     },
     {
       "id": "73",
-      "value": "73"
+      "value": "73",
+      "label": "eigrp"
     },
     {
       "id": "74",
-      "value": "74"
+      "value": "74",
+      "label": "eigrp"
     },
     {
       "id": "75",
-      "value": "75"
+      "value": "75",
+      "label": "eigrp"
     },
     {
       "id": "76",
-      "value": "76"
+      "value": "76",
+      "label": "ospf"
     },
     {
       "id": "77",
-      "value": "77"
+      "value": "77",
+      "label": "ospf"
     },
     {
       "id": "78",
-      "value": "78"
+      "value": "78",
+      "label": "ospf"
     },
     {
       "id": "79",
-      "value": "79"
+      "value": "79",
+      "label": "ospf"
     },
     {
       "id": "80",
-      "value": "80"
+      "value": "80",
+      "label": "ospf"
     },
     {
       "id": "81",
-      "value": "81"
+      "value": "81",
+      "label": "ospf"
     },
     {
       "id": "82",
-      "value": "82"
+      "value": "82",
+      "label": "ospf"
     },
     {
       "id": "83",
-      "value": "83"
+      "value": "83",
+      "label": "ospf"
     },
     {
       "id": "84",
-      "value": "84"
+      "value": "84",
+      "label": "ospf"
     },
     {
       "id": "85",
-      "value": "85"
+      "value": "85",
+      "label": "ospf"
     },
     {
       "id": "86",
-      "value": "86"
+      "value": "86",
+      "label": "ospf"
     },
     {
       "id": "87",
-      "value": "87"
+      "value": "87",
+      "label": "ospf"
     },
     {
       "id": "88",
-      "value": "88"
+      "value": "88",
+      "label": "ospf"
     },
     {
       "id": "89",
-      "value": "89"
+      "value": "89",
+      "label": "ospf"
     },
     {
       "id": "90",
-      "value": "90"
+      "value": "90",
+      "label": "ospf"
     },
     {
       "id": "91",
-      "value": "91"
+      "value": "91",
+      "label": "eigrp"
     },
     {
       "id": "92",
-      "value": "92"
+      "value": "92",
+      "label": "eigrp"
     },
     {
       "id": "93",
-      "value": "93"
+      "value": "93",
+      "label": "eigrp"
     },
     {
       "id": "94",
-      "value": "94"
+      "value": "94",
+      "label": "eigrp"
     },
     {
       "id": "95",
-      "value": "95"
+      "value": "95",
+      "label": "eigrp"
     },
     {
       "id": "96",
-      "value": "96"
+      "value": "96",
+      "label": "eigrp"
     },
     {
       "id": "97",
-      "value": "97"
+      "value": "97",
+      "label": "eigrp"
     },
     {
       "id": "98",
-      "value": "98"
+      "value": "98",
+      "label": "eigrp"
     },
     {
       "id": "99",
-      "value": "99"
+      "value": "99",
+      "label": "eigrp"
     },
     {
       "id": "100",
-      "value": "100"
+      "value": "100",
+      "label": "eigrp"
     }
   ],
   "edges": [
